@@ -12,6 +12,7 @@ html {
   padding: 0.89rem 1.33rem;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
 #logo {
@@ -29,6 +30,37 @@ html {
 }
 
 nav span a {
-
   margin-left: 0.89rem;
+}
+
+/* Jumbotron Section */
+#jumbotron {
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+}
+
+#jumbotron img {
+  width: 60%;
+  padding: 1.78rem 1.33rem;
+}
+
+#jumbotrontext {
+  width: 25%;
+}
+
+#jumbotron h1 {
+  font-size: 2.22rem;
+  margin-bottom: 1.33rem;
+}
+
+#jumbotron h3 {
+  font-size: 1.33rem;
+  margin-bottom: 1.33rem;
+}
+
+#jumbotronbutton {
+  background-color: darkgrey;
+  text-align: center;
+  padding: 0.44rem;
 }
