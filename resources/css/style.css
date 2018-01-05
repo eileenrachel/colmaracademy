@@ -50,9 +50,17 @@ p {
   display: flex;
 }
 
-.tab.image-container {
+.tab .image-container {
   width: 35%;
   height: auto;
+}
+
+.tabtext {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
 }
 
 /* Header Section */
