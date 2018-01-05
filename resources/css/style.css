@@ -6,6 +6,55 @@ html {
   line-height: 1.4;
 }
 
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.22rem;
+  margin-bottom: 1.33rem;
+}
+
+h3 {
+  font-size: 1.33rem;
+  margin-bottom: 1.33rem;
+}
+
+p {
+  font: 1rem;
+}
+
+/* Column Formatting */
+.maincontainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.column.large {
+  width: 60%;
+  padding: 1.78rem 1.33rem;
+}
+
+.column.small {
+  width: 40%;
+}
+
+/* Tab Column Formatting */
+.tab {
+  display: flex;
+}
+
+.tab.image-container {
+  width: 35%;
+  height: auto;
+}
+
 /* Header Section */
 #header {
   display: flex;
@@ -36,31 +85,23 @@ nav span a {
 /* Jumbotron Section */
 #jumbotron {
   background-color: lightgrey;
-  display: flex;
-  align-items: center;
-}
-
-#jumbotron img {
-  width: 60%;
-  padding: 1.78rem 1.33rem;
 }
 
 #jumbotrontext {
-  width: 25%;
-}
-
-#jumbotron h1 {
-  font-size: 2.22rem;
-  margin-bottom: 1.33rem;
-}
-
-#jumbotron h3 {
-  font-size: 1.33rem;
-  margin-bottom: 1.33rem;
+  width: 60%;
 }
 
 #jumbotronbutton {
   background-color: darkgrey;
   text-align: center;
   padding: 0.44rem;
+}
+
+/*Information Section */
+#information img {
+  margin-bottom: 1.78rem;
+}
+
+#featured p {
+  margin-bottom: 1.33rem;
 }
