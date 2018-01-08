@@ -75,7 +75,7 @@ p {
 }
 
 /* Header Section */
-#header {
+#header .desktop {
   display: flex;
   padding: 0.89rem 1.33rem;
   justify-content: space-between;
@@ -99,6 +99,23 @@ p {
 
 nav span a {
   margin-left: 0.89rem;
+}
+
+#header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width:470px) {
+  #header .desktop {
+    display: none;
+  }
+
+  #header .mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3.56rem;
+  }
 }
 
 /* Jumbotron Section */
@@ -127,6 +144,19 @@ nav span a {
 
 #featured p {
   margin-bottom: 1.33rem;
+}
+
+@media only screen and (max-width:470px) {
+  #jumbotron {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #jumbotron.column.large {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 /* Classes Section */
