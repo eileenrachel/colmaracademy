@@ -15,6 +15,11 @@ html {
   height: auto;
 }
 
+.image-container video {
+  max-width: 100%;
+  height: auto;
+}
+
 h1 {
   font-size: 2.22rem;
   margin-top: 0;
@@ -151,5 +156,22 @@ nav span a {
 }
 
 .tracktext h4, .tracktext p {
+  margin-bottom: 0.44rem;
+}
+
+/* Exbihit Section */
+#exhibit h2 {
+  text-align: center;
+  margin-top: 1.78rem;
+}
+#exhibit-col {
+  align-items: flex-start;
+}
+
+#exhibit-col video {
+  margin-bottom: 1.33rem;
+}
+
+#exhibit-col h4 {
   margin-bottom: 0.44rem;
 }
