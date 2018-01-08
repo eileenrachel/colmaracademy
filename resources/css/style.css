@@ -133,6 +133,43 @@ nav span a {
   padding: 0.44rem;
 }
 
+@media only screen and (max-width:470px) {
+  #jumbotron {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #jumbotron .column.large {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #jumbotron .column.small {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #jumbotrontext {
+    width: 100%;
+    padding: 1.78rem 0.89rem;
+  }
+
+  #jumbotrontext h1 {
+    margin-bottom: 1.78rem;
+  }
+
+  #jumbotrontext h3 {
+    margin-bottom: 1.33rem;
+  }
+
+  #jumbotronbutton {
+    width: 80%;
+    margin: auto;
+  }
+}
+
 /*Information Section */
 #information {
   align-items: flex-start;
@@ -144,19 +181,6 @@ nav span a {
 
 #featured p {
   margin-bottom: 1.33rem;
-}
-
-@media only screen and (max-width:470px) {
-  #jumbotron {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #jumbotron.column.large {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
 }
 
 /* Classes Section */
@@ -211,4 +235,5 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 0.89rem 1.33rem;
+  border-top: solid lightgrey 0.06rem;
 }
