@@ -68,6 +68,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-right: 0.89rem;
 }
 
 .tabtext h4, .tabtext p {
@@ -111,11 +112,13 @@ nav span a {
   }
 
   #header .mobile {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 3.56rem;
   }
+
 }
 
 /* Jumbotron Section */
@@ -152,7 +155,7 @@ nav span a {
   }
 
   #jumbotrontext {
-    width: 100%;
+    width: auto;
     padding: 1.78rem 0.89rem;
   }
 
@@ -164,10 +167,6 @@ nav span a {
     margin-bottom: 1.33rem;
   }
 
-  #jumbotronbutton {
-    width: 80%;
-    margin: auto;
-  }
 }
 
 /*Information Section */
@@ -181,6 +180,51 @@ nav span a {
 
 #featured p {
   margin-bottom: 1.33rem;
+}
+
+.image-container.mobile {
+  display: none;
+}
+
+@media only screen and (max-width:470px) {
+  #featured {
+    display: none;
+  }
+
+  #information .column.small {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tab {
+    flex-direction: column;
+    margin-bottom: 0.89rem;
+  }
+
+  .image-container.desktop {
+    display: none;
+  }
+
+  .image-container.mobile {
+    display: block;
+  }
+
+  .tab .image-container {
+    width: auto;
+    height: auto;
+  }
+
+  .tabtext {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.89rem;
+    padding-left: 0.89rem;
+    padding-right: 0.89rem;
+  }
+
 }
 
 /* Classes Section */
@@ -199,7 +243,7 @@ nav span a {
   justify-content: center;
 }
 
-.track {
+.track.desktop {
   margin: 1.78rem 0.89rem 0 0.89rem;
   background-color: white;
   width: 30%
@@ -211,6 +255,39 @@ nav span a {
 
 .tracktext h4, .tracktext p {
   margin-bottom: 0.44rem;
+}
+
+.track.mobile {
+  display: none;
+}
+
+@media only screen and (max-width:470px) {
+  #classes {
+    padding: 1.78rem 0.89rem;
+  }
+
+  #classes h2 {
+    margin-bottom: 0.44rem;
+  }
+
+  #tracks {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .track.desktop {
+    display: none;
+  }
+
+  .track.mobile {
+    display: block;
+    background-color: darkgrey;
+    padding: 0.89rem;
+    margin-top: 0.44rem;
+  }
+
 }
 
 /* Exbihit Section */
@@ -230,10 +307,45 @@ nav span a {
   margin-bottom: 0.44rem;
 }
 
+@media only screen and (max-width:470px) {
+  #exhibit {
+    margin-top: 1.78rem;
+  }
+
+  #exhibit-col .column.large {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #exhibit-text {
+    display: none;
+  }
+  #exhibit-col .column.small {
+    display: none;
+  }
+
+  #exhibit-col video {
+    margin-top: 0.89rem;
+    margin-bottom: 1.33rem;
+  }
+}
+
 /* Footer */
 footer {
   display: flex;
   justify-content: space-between;
   padding: 0.89rem 1.33rem;
   border-top: solid lightgrey 0.06rem;
+}
+
+@media only screen and (max-width:470px) {
+  footer {
+    width: auto;
+    padding: 0.89rem;
+  }
+
+  footer nav {
+    display: none;
+  }
 }
