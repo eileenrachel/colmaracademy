@@ -125,3 +125,31 @@ nav span a {
 }
 
 /* Classes Section */
+#classes {
+  padding: 1.78rem 3.11rem;
+  background-color: lightgrey;
+}
+
+#classes h2 {
+  text-align: center;
+}
+
+#tracks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.track {
+  margin: 1.78rem 0.89rem 0 0.89rem;
+  background-color: white;
+  width: 30%
+}
+
+.tracktext {
+  padding: 0.89rem;
+}
+
+.tracktext h4, .tracktext p {
+  margin-bottom: 0.44rem;
+}
