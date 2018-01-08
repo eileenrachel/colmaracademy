@@ -17,6 +17,7 @@ html {
 
 h1 {
   font-size: 2.22rem;
+  margin-top: 0;
   margin-bottom: 1.33rem;
 }
 
@@ -43,6 +44,7 @@ p {
 
 .column.small {
   width: 40%;
+  padding: 1.78rem 0;
 }
 
 /* Tab Column Formatting */
@@ -53,6 +55,7 @@ p {
 .tab .image-container {
   width: 35%;
   height: auto;
+  margin: 0.89rem;
 }
 
 .tabtext {
@@ -60,7 +63,10 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+}
+
+.tabtext h4, .tabtext p {
+  margin-bottom: 0.44rem;
 }
 
 /* Header Section */
@@ -106,10 +112,16 @@ nav span a {
 }
 
 /*Information Section */
-#information img {
+#information {
+  align-items: flex-start;
+}
+
+#main-img img {
   margin-bottom: 1.78rem;
 }
 
 #featured p {
   margin-bottom: 1.33rem;
 }
+
+/* Classes Section */
