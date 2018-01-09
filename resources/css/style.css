@@ -26,13 +26,27 @@ h1 {
   margin-bottom: 1.33rem;
 }
 
+h2 {
+  font-size: 1.67rem;
+  font-weight: 800;
+}
+
 h3 {
   font-size: 1.33rem;
   margin-bottom: 1.33rem;
 }
 
+h4 {
+  font-size: 1.11rem;
+  font-weight: bold;
+}
+
 p {
   font: 1rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Column Formatting */
@@ -64,6 +78,7 @@ p {
 }
 
 .tabtext {
+  font-family: 'Raleway', sans-serif;
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -73,6 +88,14 @@ p {
 
 .tabtext h4, .tabtext p {
   margin-bottom: 0.44rem;
+}
+
+.tabtext a {
+  color: #E18A07;
+}
+
+.tabtext a:hover {
+  text-decoration: underline;
 }
 
 /* Header Section */
@@ -94,12 +117,20 @@ p {
 #logo img {
   height: 1.78rem;
 }
+
 #logo .bold {
   font-weight: 800;
+  color: #E18A07;
 }
 
 nav span a {
   margin-left: 0.89rem;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+nav span a:hover {
+  text-decoration: underline;
 }
 
 #header .mobile {
@@ -123,17 +154,32 @@ nav span a {
 
 /* Jumbotron Section */
 #jumbotron {
-  background-color: lightgrey;
+  background-color: #C0C0C0;
 }
 
 #jumbotrontext {
   width: 60%;
 }
 
+#jumbotrontext h1 {
+  font-weight: 900;
+}
+
 #jumbotronbutton {
-  background-color: darkgrey;
+  font-family: 'Raleway', sans-serif;
+  background-color: #D4AF37;
   text-align: center;
   padding: 0.44rem;
+}
+
+#jumbotronbutton a {
+  color: black;
+}
+
+#jumbotronbutton a:hover {
+  color: white;
+  transition-property:color;
+  transition-duration: 950ms;
 }
 
 @media only screen and (max-width:470px) {
@@ -178,8 +224,17 @@ nav span a {
   margin-bottom: 1.78rem;
 }
 
+#featured h1 {
+  font-weight: 900;
+}
+
 #featured p {
   margin-bottom: 1.33rem;
+}
+
+#featured h6 {
+  font-style: italic;
+  font-weight: bold;
 }
 
 .image-container.mobile {
@@ -230,11 +285,12 @@ nav span a {
 /* Classes Section */
 #classes {
   padding: 1.78rem 3.11rem;
-  background-color: lightgrey;
+  background-color: #C0C0C0;
 }
 
 #classes h2 {
   text-align: center;
+  font-size:
 }
 
 #tracks {
@@ -251,6 +307,15 @@ nav span a {
 
 .tracktext {
   padding: 0.89rem;
+}
+
+.tracktext .title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.tracktext h4 {
+  color: #E18A07;
 }
 
 .tracktext h4, .tracktext p {
@@ -283,9 +348,19 @@ nav span a {
 
   .track.mobile {
     display: block;
-    background-color: darkgrey;
+    background-color: #D4AF37;
     padding: 0.89rem;
     margin-top: 0.44rem;
+  }
+
+  .track a {
+    color: black;
+    transition-property:color;
+    transition-duration: 950ms;
+  }
+
+  .track a:hover {
+    color: white;
   }
 
 }
@@ -334,9 +409,11 @@ nav span a {
 /* Footer */
 footer {
   display: flex;
+  font-family: 'Raleway', sans-serif;
   justify-content: space-between;
   padding: 0.89rem 1.33rem;
   border-top: solid lightgrey 0.06rem;
+  font-size: 0.67rem;
 }
 
 @media only screen and (max-width:470px) {
